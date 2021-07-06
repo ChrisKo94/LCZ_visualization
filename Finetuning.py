@@ -1,3 +1,4 @@
+import os.path
 
 import h5py
 import numpy as np
@@ -46,7 +47,8 @@ urban = False
 
 train_file = 'data/train_data.h5'
 path_data = "data/"
-checkpoint_path = "/data/lcz42_votes/LCZ_visualization/"
+checkpoint_path = "/data/lcz42_votes/LCZ_visualization/checkpoint.ckpt"
+checkpoint_dir = os.path.dirname(checkpoint_path)
 
 '''
 path_finetuning_data = "D:/Data/EuroSat/"
